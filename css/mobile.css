@@ -322,9 +322,9 @@ a.btn--orange {
     color: #4D4A45;
     background-color: #ffd477;
     border-bottom: 5px solid #ffc23f;
-    padding: 10px;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding: 1px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 a.btn--orange:hover {
@@ -352,7 +352,7 @@ a.btn--shadow {
 }
 
 .box4 {
-    padding: 8px 19px;
+    padding: 8px 1px;
     margin: 2em 0;
     color: #2c2c2f;
     background: #fcf8e1;
@@ -367,13 +367,30 @@ a.btn--shadow {
     padding: 0;
 }
 
+.box5 {
+    padding: 10px 1px;
+    margin: 2em 0;
+    margin-top: 2rem;
+    color: #2c2c2f;
+    background: #fcf8e1;
+    border-top: solid 5px #FFE8B5;
+    border-bottom: solid 5px #FFE8B5;
+    padding-bottom: 2rem;
+}
+
+.box5 p {
+    margin: 1rem;
+    margin-bottom: 2rem;
+    padding: 0;
+}
+
 .price__detail {
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 800;
 }
 
 .plan__detail {
-    font-size: 30px;
+    font-size: 15px;
 }
 
 .attention {
@@ -1061,6 +1078,10 @@ select {
     text-align: center;
     background-color: transparent;
     margin-top: 2rem;
+}
+
+.info-topix {
+    font-size: 15px;
 }
 
 .latest-information__main {
