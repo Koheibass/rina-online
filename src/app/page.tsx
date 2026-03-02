@@ -130,8 +130,10 @@ export default function HomePage() {
     <>
       <Header />
       <HeroCarousel />
-      <main className="grow bg-cream-main px-4 lg:px-20">
+      <main className="grow bg-cream-main px-4 lg:px-20 py-4 lg:py-8">
         <NewsSection />
+
+        <hr className="border-t border-cream-border my-8 lg:my-12" />
 
         <CourseDetail
           id="friends"
@@ -154,6 +156,8 @@ export default function HomePage() {
           buttonHref="#join"
           highlightClass="bg-cream-footer text-brown"
         />
+
+        <hr className="border-t border-cream-border my-8 lg:my-12" />
 
         <CourseDetail
           id="study"
@@ -178,8 +182,16 @@ export default function HomePage() {
           highlightClass="bg-pink-bg text-pink-accent"
         />
 
+        <hr className="border-t border-cream-border my-8 lg:my-12" />
+
         <JoinSection />
+
+        <hr className="border-t border-cream-border my-8 lg:my-12" />
+
         <OwnerPhilosophy />
+
+        <hr className="border-t border-cream-border my-8 lg:my-12" />
+
         <NotesSection />
       </main>
       <Footer />

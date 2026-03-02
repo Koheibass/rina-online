@@ -12,7 +12,7 @@ export function OrangeButton({
   external = false,
 }: OrangeButtonProps) {
   const classes =
-    "inline-block text-dark-button bg-gold-button border-b-[5px] border-gold-button-border px-4 lg:px-16 py-1 lg:py-2.5 shadow-md rounded-sm font-bold text-center no-underline transition-all hover:text-white hover:bg-gold-button-hover hover:border-gold-button-hover-border";
+    "inline-block text-dark-button bg-gold-button px-6 lg:px-16 py-2 lg:py-3 rounded-full shadow-button font-bold text-center no-underline transition-all duration-300 hover:text-white hover:bg-gold-button-hover hover:shadow-md hover:scale-[1.03]";
 
   if (external) {
     return (

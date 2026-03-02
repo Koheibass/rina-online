@@ -29,7 +29,7 @@ export function NewsSection() {
   return (
     <section className="mb-8">
       {/* Top description */}
-      <div className="flex items-center gap-2 justify-center my-6">
+      <div className="flex items-center gap-2 justify-center my-8">
         <Image
           src="/images/Gclef.png"
           alt="ト音記号"
@@ -48,8 +48,8 @@ export function NewsSection() {
       </div>
 
       {/* Latest Info */}
-      <div className="mt-8">
-        <h3 className="text-center text-brown my-4">
+      <div className="mt-10 bg-white rounded-2xl shadow-card p-6 lg:p-10">
+        <h3 className="text-center text-brown mb-6">
           <div className="text-[13px] lg:text-[25px] font-bold">最新情報</div>
           <div className="section-subtitle">News</div>
         </h3>
@@ -73,8 +73,8 @@ export function NewsSection() {
       </div>
 
       {/* About */}
-      <div className="mt-8">
-        <h3 className="text-center text-brown my-4">
+      <div className="mt-10 bg-white rounded-2xl shadow-card p-6 lg:p-10">
+        <h3 className="text-center text-brown mb-6">
           <div className="text-[13px] lg:text-[25px] font-bold">
             おといのちオンラインとは
           </div>
@@ -86,15 +86,14 @@ export function NewsSection() {
             &quot;年齢や性別はもちろん、音楽演奏歴や愛好歴もさまざまなクラシック音楽愛好家が、音楽好きな仲間と出会って語り合える、
             日本一平和なコミュニティ&quot;を目指しています。
           </p>
-          <p className="mt-4">
+          <p className="mt-6">
             　ここでは、毎日の気軽な練習報告や、練習中に発見したこと、
             <br />
             好きな音楽について存分に語り合っていただけたら嬉しいです♪
             <br />
             文字だけでも、動画をアップすることもできるので、毎日の進捗報告はもちろん、レッスン前や本番前に励まし合える仲間をつくることができます。
           </p>
-          <p className="mt-4">
-
+          <p className="mt-6">
             そういった投稿を気軽にできるのはもちろん、見るだけでもモチベーションアップに繋がりますし、参加するだけでより一段とあなたの音楽ライフを充実させることができます！
           </p>
         </div>

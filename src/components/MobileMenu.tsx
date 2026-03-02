@@ -33,7 +33,7 @@ export function MobileMenu() {
 
       {/* Slide menu */}
       <ul
-        className={`fixed top-12 right-0 w-full bg-white/90 transition-transform duration-300 z-50 list-none p-0 m-0 shadow-md ${
+        className={`fixed top-14 right-0 w-full bg-white/90 transition-transform duration-300 z-50 list-none p-0 m-0 shadow-md ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

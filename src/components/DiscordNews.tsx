@@ -49,7 +49,7 @@ export default function DiscordNews() {
   }
 
   return (
-    <div className="mt-4 mb-6 mx-auto max-w-4xl space-y-3 max-h-[500px] overflow-y-auto rounded-lg border border-cream-border bg-cream-box p-4">
+    <div className="mt-4 mb-6 mx-auto max-w-4xl space-y-3 max-h-[500px] overflow-y-auto rounded-2xl bg-cream-box shadow-card p-5 lg:p-6">
       {messages.map((msg) => (
         <div
           key={msg.id}

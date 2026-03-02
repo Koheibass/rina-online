@@ -4,8 +4,8 @@ import { MobileMenu } from "./MobileMenu";
 
 export function Header() {
   return (
-    <nav className="sticky top-0 z-10 w-full bg-cream-header">
-      <div className="flex items-center h-12">
+    <nav className="sticky top-0 z-10 w-full bg-cream-header shadow-soft">
+      <div className="flex items-center h-14 lg:h-16">
         <div className="flex-1">
           <Link
             href="/"

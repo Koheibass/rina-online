@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+@utility shadow-soft {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+@utility shadow-card {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+@utility shadow-button {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+}
+
 @theme inline {
   --color-brown: #937a43;
   --color-brown-light: #a07c43;
@@ -51,10 +63,9 @@ body {
 .section-title-divider::after {
   content: "";
   position: absolute;
-  top: calc(50% - 2.5px);
-  height: 3px;
-  border-top: solid 1px #9d8566;
-  border-bottom: solid 1px #9d8566;
+  top: 50%;
+  height: 1px;
+  background-color: #c4a96a;
   width: calc(50% - 3rem);
 }
 
@@ -69,7 +80,7 @@ body {
 /* Section subtitle (without lines) */
 .section-subtitle {
   font-family: var(--font-cursive);
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   text-transform: capitalize;
 }

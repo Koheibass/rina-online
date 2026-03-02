@@ -4,7 +4,7 @@ export function NotesSection() {
   return (
     <section className="mb-8 lg:mb-16">
       <SectionTitle title="注意事項" subtitle="Notes" id="notes" />
-      <div className="text-[13px] lg:text-[20px] text-brown leading-relaxed">
+      <div className="bg-white rounded-2xl shadow-card p-6 lg:p-10 text-[13px] lg:text-[20px] text-brown leading-relaxed">
         <p>
           このコミュニティは、クラシック音楽愛好家がつながるコミュニティです。
           <br />
