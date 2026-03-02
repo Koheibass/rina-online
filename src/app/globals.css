@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-brown: #937a43;
+  --color-brown-light: #a07c43;
+  --color-brown-border: #9d8566;
+  --color-cream-header: #FFEECC;
+  --color-cream-main: #fefaff;
+  --color-cream-footer: #FFF7E6;
+  --color-cream-box: #fcf8e1;
+  --color-cream-border: #FFF0CF;
+  --color-cream-border-alt: #FFE8B5;
+  --color-gold-button: #ffd477;
+  --color-gold-button-border: #ffc23f;
+  --color-gold-button-hover: #f56500;
+  --color-gold-button-hover-border: #b84c00;
+  --color-pink-accent: #ec4899;
+  --color-pink-light: #ee71bf;
+  --color-pink-bg: #ffeeee;
+  --color-pink-link: #ff9a9a;
+  --color-dark-text: #2c2c2f;
+  --color-dark-box: #4D483E;
+  --color-dark-button: #4D4A45;
+
+  --font-serif: var(--font-noto-serif-jp), serif;
+  --font-heading: var(--font-castoro), serif;
+  --font-cursive: var(--font-parisienne), cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+/* Section title decorative lines */
+.section-title-divider {
+  font-family: var(--font-cursive);
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.section-title-divider::before,
+.section-title-divider::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2.5px);
+  height: 3px;
+  border-top: solid 1px #9d8566;
+  border-bottom: solid 1px #9d8566;
+  width: calc(50% - 3rem);
+}
+
+.section-title-divider::before {
+  left: 0;
+}
+
+.section-title-divider::after {
+  right: 0;
+}
+
+/* Section subtitle (without lines) */
+.section-subtitle {
+  font-family: var(--font-cursive);
+  font-size: 12px;
+  text-align: center;
+  text-transform: capitalize;
+}
