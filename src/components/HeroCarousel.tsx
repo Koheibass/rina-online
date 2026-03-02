@@ -15,6 +15,7 @@ export function HeroCarousel() {
       speed={2000}
       slidesPerView={1}
       pagination={{ clickable: true }}
+      className="w-full"
     >
       <SwiperSlide>
         <Image

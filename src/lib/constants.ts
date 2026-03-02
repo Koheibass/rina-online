@@ -22,7 +22,7 @@ export const COURSES = {
   otoManabi: {
     name: "おとまなびコース",
     planName: "♪おとまなびコース",
-    price: "3,600円",
+    price: "3,900円",
     priceUnit: "/月",
   },
 } as const;

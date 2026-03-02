@@ -22,9 +22,9 @@ export function OwnerPhilosophy() {
           />
         </div>
         <div className="mt-4 lg:mt-0 lg:pl-5">
-          <div className="text-2xl text-brown">
+          <div className="text-xl lg:text-2xl text-brown">
             赤星 里奈
-            <span className="font-cursive text-lg ml-2">Rina Akaboshi</span>
+            <span className="font-cursive text-base lg:text-lg ml-2">Rina Akaboshi</span>
           </div>
           <div className="text-[13px] lg:text-[20px] text-brown leading-relaxed mt-4">
             <p>

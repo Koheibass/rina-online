@@ -172,7 +172,7 @@ export default function HomePage() {
             "上達したい！という思いを持った仲間と共に励まし合いながら頑張りたい！！",
           ]}
           planName="♪おとまなびコース"
-          price="3,600円"
+          price="3,900円"
           priceUnit="/月"
           buttonHref="#join"
           highlightClass="bg-pink-bg text-pink-accent"

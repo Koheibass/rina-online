@@ -22,7 +22,7 @@
   --color-dark-box: #4D483E;
   --color-dark-button: #4D4A45;
 
-  --font-serif: var(--font-noto-serif-jp), serif;
+  --font-serif: var(--font-shippori-mincho), serif;
   --font-heading: var(--font-castoro), serif;
   --font-cursive: var(--font-parisienne), cursive;
 }
@@ -33,6 +33,7 @@ html {
 
 body {
   margin: 0;
+  letter-spacing: 0.08em;
 }
 
 /* Section title decorative lines */

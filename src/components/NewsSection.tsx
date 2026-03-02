@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import DiscordNews from "./DiscordNews";
 
 const newsItems = [
   {
@@ -52,6 +53,7 @@ export function NewsSection() {
           <div className="text-[13px] lg:text-[25px] font-bold">最新情報</div>
           <div className="section-subtitle">News</div>
         </h3>
+        <DiscordNews />
         <div className="text-[13px] lg:text-[20px] text-brown">
           {newsItems.map((item) => (
             <div key={item.href + item.date} className="mb-2">

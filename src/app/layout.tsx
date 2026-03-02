@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Castoro, Noto_Serif_JP, Parisienne } from "next/font/google";
+import { Castoro, Shippori_Mincho, Parisienne } from "next/font/google";
 import "./globals.css";
 
 const castoro = Castoro({
@@ -8,10 +8,10 @@ const castoro = Castoro({
   variable: "--font-castoro",
 });
 
-const notoSerifJP = Noto_Serif_JP({
+const shipporiMincho = Shippori_Mincho({
   subsets: ["latin"],
-  weight: "300",
-  variable: "--font-noto-serif-jp",
+  weight: ["400", "500"],
+  variable: "--font-shippori-mincho",
 });
 
 const parisienne = Parisienne({
@@ -44,7 +44,7 @@ export default function RootLayout({
   return (
     <html
       lang="ja"
-      className={`${castoro.variable} ${notoSerifJP.variable} ${parisienne.variable}`}
+      className={`${castoro.variable} ${shipporiMincho.variable} ${parisienne.variable}`}
     >
       <body className="font-serif">
         <div className="flex flex-col relative min-h-screen">{children}</div>
