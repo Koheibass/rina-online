@@ -5,65 +5,78 @@ export function OwnerPhilosophy() {
   return (
     <section className="mb-8 lg:mb-16">
       <SectionTitle
-        title="オンラインコミュニティ開設にあたって"
+        title="想いを込めて"
         subtitle="Philosophy"
         id="thought"
       />
 
       {/* Profile intro */}
-      <div className="lg:flex gap-8 mb-8">
-        <div className="lg:w-[400px] shrink-0">
-          <Image
-            src="/images/biography.webp"
-            alt="赤星里奈"
-            width={400}
-            height={500}
-            className="w-full lg:w-[400px] rounded-2xl shadow-card"
-          />
-        </div>
-        <div className="mt-4 lg:mt-0 lg:pl-5">
-          <div className="text-xl lg:text-2xl text-brown">
-            赤星 里奈
-            <span className="font-cursive text-base lg:text-lg ml-2">Rina Akaboshi</span>
+      <div className="bg-white rounded-2xl shadow-card p-6 lg:p-10 mb-8 border border-cream-border">
+        <div className="lg:flex gap-8">
+          <div className="lg:w-[350px] shrink-0">
+            <Image
+              src="/images/biography.webp"
+              alt="赤星里奈"
+              width={400}
+              height={500}
+              className="w-full lg:w-[350px] rounded-2xl"
+            />
           </div>
-          <div className="text-[13px] lg:text-[20px] text-brown leading-relaxed mt-4">
-            <p>
-              皆さま、初めまして。
-              クラシック音楽愛好家コミュニティ&quot;おといのちオンライン&quot;
-              オーナーの赤星里奈です。
-              このたびはご訪問くださり、誠にありがとうございます。
-            </p>
-            <p className="mt-6">
-              わたしはこれまで、クラシック音楽を専門的に学んできました。
-              音楽高校、音楽大学、ドイツの国立音楽大学院を修了し、
-              自分の周りにはプロ、またはプロを目指す学生しかいない、
-              という環境で長く過ごしてきました。
-            </p>
-            <p className="mt-6">
-              そんな中、自分の手の故障がきっかけで発信活動を始め、
-              ありがたいことに約4万人の登録者さんとYouTubeを通して
-              出会うことができました。
-              これまでたくさんのコメントやご意見をお寄せいただく中で、
-              感じたことがあります。
-            </p>
+          <div className="mt-4 lg:mt-0 lg:pl-4">
+            <div className="text-xl lg:text-2xl text-text-heading font-bold">
+              赤星 里奈
+              <span className="font-cursive text-primary text-base lg:text-lg ml-2 font-normal">
+                Rina Akaboshi
+              </span>
+            </div>
+            <div className="text-[13px] lg:text-[18px] text-text-main leading-relaxed mt-4">
+              <p>
+                皆さま、初めまして。
+                クラシック音楽愛好家コミュニティ&quot;おといのちオンライン&quot;
+                オーナーの赤星里奈です。
+                このたびはご訪問くださり、誠にありがとうございます。
+              </p>
+              <p className="mt-5">
+                わたしはこれまで、クラシック音楽を専門的に学んできました。
+                音楽高校、音楽大学、ドイツの国立音楽大学院を修了し、
+                自分の周りにはプロ、またはプロを目指す学生しかいない、
+                という環境で長く過ごしてきました。
+              </p>
+              <p className="mt-5">
+                そんな中、自分の手の故障がきっかけで発信活動を始め、
+                ありがたいことに約4万人の登録者さんとYouTubeを通して
+                出会うことができました。
+                これまでたくさんのコメントやご意見をお寄せいただく中で、
+                感じたことがあります。
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Philosophy part 1 */}
-      <div className="text-[13px] lg:text-[20px] text-brown leading-relaxed mb-8">
-        <p>
-          それは、「クラシック音楽の愛好家同士が繋がれる場所がない」ということです。
+      {/* Philosophy quote */}
+      <div className="bg-pink-bg rounded-2xl p-6 lg:p-8 mb-8 text-center">
+        <p className="text-lg lg:text-2xl font-bold text-primary leading-relaxed">
+          「クラシック音楽の愛好家同士が
+          <br className="lg:hidden" />
+          繋がれる場所がない」
         </p>
-        <p className="mt-6">
+        <p className="text-sm lg:text-base text-text-light mt-2">
+          ー 活動を通じて感じた、切実な想い
+        </p>
+      </div>
+
+      {/* Philosophy part 1 */}
+      <div className="text-[13px] lg:text-[18px] text-text-main leading-relaxed mb-8">
+        <p>
           はっきり言って、クラシック音楽は世間的にはまだまだマイナーな存在で、日常の中でクラシック愛好家と出会える場面は、
           残念ながらそう多くはありません。
         </p>
-        <p className="mt-6">
+        <p className="mt-5">
           ですが、音楽を楽しみ志すうえで、音楽を語り合える仲間の存在は、
           大変貴重で大切なものだと、わたし自身感じています。
         </p>
-        <p className="mt-6">
+        <p className="mt-5">
           わたしの音楽人生は、いつも音楽仲間に支えられて歩んできました。
           もし仲間がいなかったら、ここまで頑張れていたか、自分でもわかりません。
         </p>
@@ -71,34 +84,36 @@ export function OwnerPhilosophy() {
 
       {/* Philosophy part 2 with photo */}
       <div className="lg:flex gap-8 mb-8">
-        <div className="lg:w-[400px] shrink-0">
+        <div className="lg:w-[350px] shrink-0">
           <Image
             src="/images/Mphoto3.jpg"
             alt="赤星里奈"
             width={400}
             height={500}
-            className="w-full lg:w-[400px] rounded-2xl shadow-card"
+            className="w-full lg:w-[350px] rounded-2xl shadow-card"
           />
         </div>
-        <div className="text-[13px] lg:text-[20px] text-brown leading-relaxed mt-4 lg:mt-0 lg:pl-5">
+        <div className="text-[13px] lg:text-[18px] text-text-main leading-relaxed mt-4 lg:mt-0 lg:pl-4">
           <p>
             せっかく自分の中の学びや、楽しかった瞬間、
             うまくいった演奏やそうでない演奏をシェアしたくても、
             気軽にそれらを共有できる場所が、今の公開SNS上にはないんじゃないかな？
             と感じ、このコミュニティを開設してみよう！と思い至りました。
           </p>
-          <p className="mt-6">
+          <p className="mt-5">
             クラシック音楽を楽しむには、まずは知識！と思われがちですが、
           </p>
-          <p className="mt-6">
-            &quot;好きな曲を自分で弾くことが楽しい！&quot;
-            <br />
-            &quot;好きな曲を聴くことが楽しい！&quot;
-          </p>
-          <p className="mt-6">
+          <div className="bg-section-bg rounded-xl p-4 my-4">
+            <p className="font-bold text-primary">
+              &quot;好きな曲を自分で弾くことが楽しい！&quot;
+              <br />
+              &quot;好きな曲を聴くことが楽しい！&quot;
+            </p>
+          </div>
+          <p>
             という気持ちがまず何より大切だとわたしは感じます。
           </p>
-          <p className="mt-6">
+          <p className="mt-5">
             そんな気持ちを大事にシェアしあえる仲間と、
             &quot;おとなかま&quot;を通して出会い、
             より充実した音楽ライフを送る人が増え、
@@ -109,23 +124,23 @@ export function OwnerPhilosophy() {
       </div>
 
       {/* Philosophy conclusion */}
-      <div className="text-[13px] lg:text-[20px] text-brown leading-relaxed">
+      <div className="bg-white rounded-2xl shadow-card p-6 lg:p-10 border border-cream-border text-[13px] lg:text-[18px] text-text-main leading-relaxed">
         <p>
           「クラシック音楽仲間を作りたかったら、おといのちオンラインに行けば大丈夫だよ！」
         </p>
-        <p className="mt-6">
+        <p className="mt-5">
           とみんなが自信を持って言えるような、
           日本一平和で優しいコミュニティにしていけたら…と思っています。
         </p>
-        <p className="mt-6">
+        <p className="mt-5">
           そしてより知識も深めてみたいな、と思われた方は、
           人数限定にはなりますが&quot;おとまなび&quot;にもぜひ遊びにきてください♪
           初心者さんも大歓迎します。
         </p>
-        <p className="mt-6">
+        <p className="mt-5 font-bold text-primary">
           音楽仲間との新しい出会いが、皆さまの人生の新しい彩りとなることを願って…
         </p>
-        <p className="mt-6 text-right">
+        <p className="mt-5 text-right text-text-light">
           おといのちオンライン オーナー　赤星 里奈
         </p>
       </div>

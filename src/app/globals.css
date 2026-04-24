@@ -1,38 +1,66 @@
 @import "tailwindcss";
 
 @utility shadow-soft {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
 }
 
 @utility shadow-card {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06), 0 1px 6px rgba(0, 0, 0, 0.03);
 }
 
 @utility shadow-button {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 4px 14px rgba(232, 99, 122, 0.3);
+}
+
+@utility gradient-coral {
+  background: linear-gradient(135deg, #e8637a 0%, #f08a98 100%);
+}
+
+@utility gradient-warm {
+  background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
 }
 
 @theme inline {
+  --color-primary: #e8637a;
+  --color-primary-light: #f08a98;
+  --color-primary-dark: #d4506a;
+  --color-accent: #f59e0b;
+  --color-accent-light: #fbbf24;
+
   --color-brown: #937a43;
   --color-brown-light: #a07c43;
   --color-brown-border: #9d8566;
-  --color-cream-header: #FFEECC;
-  --color-cream-main: #fefaff;
-  --color-cream-footer: #FFF7E6;
-  --color-cream-box: #fcf8e1;
-  --color-cream-border: #FFF0CF;
-  --color-cream-border-alt: #FFE8B5;
-  --color-gold-button: #ffd477;
-  --color-gold-button-border: #ffc23f;
-  --color-gold-button-hover: #f56500;
-  --color-gold-button-hover-border: #b84c00;
-  --color-pink-accent: #ec4899;
-  --color-pink-light: #ee71bf;
-  --color-pink-bg: #ffeeee;
-  --color-pink-link: #ff9a9a;
-  --color-dark-text: #2c2c2f;
-  --color-dark-box: #4D483E;
-  --color-dark-button: #4D4A45;
+
+  --color-header-bg: #fff8f0;
+  --color-main-bg: #ffffff;
+  --color-section-bg: #fef7f0;
+  --color-card-bg: #ffffff;
+  --color-footer-bg: #fff8f0;
+
+  --color-cream-header: #fff8f0;
+  --color-cream-main: #ffffff;
+  --color-cream-footer: #fff3e6;
+  --color-cream-box: #fef7f0;
+  --color-cream-border: #fde8d0;
+  --color-cream-border-alt: #fcdcb5;
+
+  --color-gold-button: #e8637a;
+  --color-gold-button-border: #d4506a;
+  --color-gold-button-hover: #d4506a;
+  --color-gold-button-hover-border: #c0405a;
+
+  --color-pink-accent: #e8637a;
+  --color-pink-light: #f08a98;
+  --color-pink-bg: #fef1f3;
+  --color-pink-link: #e8637a;
+
+  --color-dark-text: #374151;
+  --color-dark-box: #4b5563;
+  --color-dark-button: #ffffff;
+
+  --color-text-main: #374151;
+  --color-text-light: #6b7280;
+  --color-text-heading: #1f2937;
 
   --font-serif: var(--font-shippori-mincho), serif;
   --font-heading: var(--font-castoro), serif;
@@ -46,17 +74,19 @@ html {
 body {
   margin: 0;
   letter-spacing: 0.08em;
+  color: var(--color-text-main);
 }
 
 /* Section title decorative lines */
 .section-title-divider {
   font-family: var(--font-cursive);
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   width: 100%;
   display: inline-block;
   position: relative;
   text-transform: capitalize;
+  color: var(--color-primary);
 }
 
 .section-title-divider::before,
@@ -65,7 +95,7 @@ body {
   position: absolute;
   top: 50%;
   height: 1px;
-  background-color: #c4a96a;
+  background: linear-gradient(90deg, transparent, var(--color-primary-light), transparent);
   width: calc(50% - 3rem);
 }
 
@@ -83,4 +113,5 @@ body {
   font-size: 14px;
   text-align: center;
   text-transform: capitalize;
+  color: var(--color-primary);
 }

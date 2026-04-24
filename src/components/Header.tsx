@@ -4,24 +4,24 @@ import { MobileMenu } from "./MobileMenu";
 
 export function Header() {
   return (
-    <nav className="sticky top-0 z-10 w-full bg-cream-header shadow-soft">
-      <div className="flex items-center h-14 lg:h-16">
+    <nav className="sticky top-0 z-20 w-full bg-white/95 backdrop-blur-sm shadow-soft">
+      <div className="flex items-center h-14 lg:h-16 max-w-6xl mx-auto px-4">
         <div className="flex-1">
           <Link
             href="/"
-            className="font-heading text-brown text-xl lg:text-2xl pl-1 lg:pl-4 no-underline font-black tracking-wide"
+            className="font-heading text-primary text-xl lg:text-2xl no-underline font-black tracking-wide"
           >
             おといのちオンライン
           </Link>
         </div>
         <div className="flex items-center justify-end">
           {/* Desktop nav */}
-          <div className="hidden lg:flex items-center gap-2">
+          <div className="hidden lg:flex items-center gap-1">
             {NAV_ITEMS.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="text-brown text-[18px] font-bold no-underline pr-3 hover:text-brown-light transition-colors"
+                className="text-text-main text-[15px] font-bold no-underline px-3 py-2 rounded-lg hover:bg-pink-bg hover:text-primary transition-all duration-200"
               >
                 {item.label}
               </a>
