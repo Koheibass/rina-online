@@ -36,18 +36,23 @@ export function NewsSection() {
             alt="ト音記号"
             width={30}
             height={60}
-            className="w-[5%] max-w-[30px]"
+            className="w-[5%] max-w-7.5"
           />
         </div>
-        <h2 className="text-lg lg:text-3xl font-bold text-text-heading mb-3 leading-snug">
+        <h2 className="text-lg lg:text-3xl font-bold text-text-heading mb-3 leading-relaxed tracking-widest">
           ひとりで楽しむ音楽から、
           <br />
-          みんなで楽しむ音楽へ。
+          <span className="text-xl lg:text-4xl text-primary">みんな</span>
+          で楽しむ音楽へ。
         </h2>
         <p className="text-sm lg:text-lg text-text-light leading-relaxed">
           練習の悩みも、感動も、全部シェアできる場所。
           <br />
-          クラシック音楽を愛する仲間が、ここで待っています。
+          心優しい大人な音楽仲間と、
+          <br />
+          あなたの音楽を楽しくレベルアップさせる
+          <br />
+          たくさんのコンテンツが待っています。
         </p>
       </div>
 
