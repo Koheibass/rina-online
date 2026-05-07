@@ -7,7 +7,7 @@ export const EXTERNAL_LINKS = {
   squareOtoNakama:
     "https://checkout.square.site/merchant/MLEBAD16WCXRP/checkout/2RSMC3DZGZ6MDCATZEXDNDS4",
   squareOtoManabi:
-    "https://checkout.square.site/merchant/MLEBAD16WCXRP/checkout/IMTLCOASL3W2653EUJOTW6BX",
+    "https://checkout.square.site/merchant/MLEBAD16WCXRP/checkout/4QFAYUPSE5OZEK7ZTGV36V5A",
   email: "mailto:info@rina-akaboshi.com",
   vimeoVideo: "https://player.vimeo.com/video/904759768?h=afafd305c7&badge=0&autopause=0&player_id=0&app_id=58479",
 } as const;
