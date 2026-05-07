@@ -10,13 +10,19 @@ export function JoinSection() {
     <section className="mb-8 lg:mb-16">
       <SectionTitle title="ご入会までの流れ" subtitle="Flow" id="join" />
 
-      <StepBox title="Step1 Discord登録">
-        <p className="text-[13px] lg:text-[20px] text-brown">
+      <div className="text-center -mt-8 lg:-mt-16 mb-10">
+        <p className="text-text-light text-sm lg:text-lg">
+          たった3ステップで参加できます！
+        </p>
+      </div>
+
+      <StepBox title="Discord登録" stepNumber={1}>
+        <p className="text-[13px] lg:text-[18px] text-text-main">
           Discordアプリをダウンロード
         </p>
-        <div className="my-2 text-[13px] lg:text-[20px] text-brown">
+        <div className="my-3 text-[13px] lg:text-[18px] text-text-main">
           <div className="flex items-center gap-2 mb-2">
-            　iOSの方→
+            iOSの方 →
             <a href={EXTERNAL_LINKS.iosApp} target="_blank" rel="noopener noreferrer">
               <Image
                 src="/images/ioswhite.svg"
@@ -28,7 +34,7 @@ export function JoinSection() {
             </a>
           </div>
           <div className="flex items-center gap-2 mb-2">
-            　Androidの方→
+            Androidの方 →
             <a href={EXTERNAL_LINKS.androidApp} target="_blank" rel="noopener noreferrer">
               <Image
                 src="/images/google-play-badge.png"
@@ -40,7 +46,7 @@ export function JoinSection() {
             </a>
           </div>
         </div>
-        <p className="text-[13px] lg:text-[20px] text-brown mt-4">
+        <p className="text-[13px] lg:text-[18px] text-text-main mt-4">
           ダウンロード後、以下のボタンよりアクセスし、Discordにログイン、
           または会員登録をお願いします。
           <br />
@@ -49,25 +55,25 @@ export function JoinSection() {
         </p>
         <div className="text-center mt-4">
           <OrangeButton href={EXTERNAL_LINKS.discord} external>
-            こちらから
+            Discordに参加する
           </OrangeButton>
         </div>
       </StepBox>
 
-      <StepBox title="Step2 お支払い">
-        <p className="text-[13px] lg:text-[20px] text-brown">
+      <StepBox title="お支払い" stepNumber={2}>
+        <p className="text-[13px] lg:text-[18px] text-text-main">
           以下のボタンより、お支払い手続きをお願いします。
           <br />
           その際に、必ず氏名（姓名）を入力してください。
           （このあとお名前が必要になります）
         </p>
         <div className="text-center mt-4">
-          <OrangeButton href="/payment">お支払いへ</OrangeButton>
+          <OrangeButton href="/payment">お支払いへ進む</OrangeButton>
         </div>
       </StepBox>
 
-      <StepBox title="Step3 DM送信">
-        <p className="text-[13px] lg:text-[20px] text-brown">
+      <StepBox title="DM送信" stepNumber={3}>
+        <p className="text-[13px] lg:text-[18px] text-text-main">
           お支払い時にご入力いただいたお名前を、あかぼしりな宛にDiscord内のDMで必ず送信してください。
           <br />
           その後24時間以内に、ご参加可能となります。
@@ -76,12 +82,12 @@ export function JoinSection() {
         </p>
       </StepBox>
 
-      <div className="mt-8">
-        <SectionTitle title="ご入会＆ご退会方法解説動画" subtitle="Join" />
+      <div className="mt-10">
+        <SectionTitle title="ご入会＆ご退会方法解説動画" subtitle="Guide" />
         <VimeoEmbed src={EXTERNAL_LINKS.vimeoVideo} title="説明動画" />
-        <p className="text-[13px] lg:text-[20px] text-brown mt-4">
+        <p className="text-[13px] lg:text-[18px] text-text-main mt-4">
           ※動画内は旧ホームページデザインになっています。入会方法でお困りの方は
-          <a href={EXTERNAL_LINKS.email} className="font-bold underline">
+          <a href={EXTERNAL_LINKS.email} className="font-bold text-primary underline">
             こちら (info@rina-akaboshi.com)
           </a>
           までご連絡ください。

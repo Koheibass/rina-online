@@ -10,6 +10,7 @@ interface CourseDetailProps {
   id: string;
   titleJa: string;
   titleEn: string;
+  catchphrase?: string;
   preamble?: React.ReactNode;
   features: CourseFeature[];
   extraContent?: React.ReactNode;
@@ -19,12 +20,14 @@ interface CourseDetailProps {
   priceUnit: string;
   buttonHref: string;
   highlightClass: string;
+  popular?: boolean;
 }
 
 export function CourseDetail({
   id,
   titleJa,
   titleEn,
+  catchphrase,
   preamble,
   features,
   extraContent,
@@ -34,40 +37,51 @@ export function CourseDetail({
   priceUnit,
   buttonHref,
   highlightClass,
+  popular = false,
 }: CourseDetailProps) {
   return (
     <section className="mb-8 lg:mb-16">
       <SectionTitle title={titleJa} subtitle={titleEn} id={id} />
+
+      {catchphrase && (
+        <p className="text-center text-text-light text-sm lg:text-lg mb-8 -mt-8 lg:-mt-16">
+          {catchphrase}
+        </p>
+      )}
+
       <div>
-        <div className="bg-white rounded-2xl shadow-card p-6 lg:p-10 mb-8">
-          <h3 className="text-center text-brown mb-6">
-            <div className="text-sm lg:text-base font-bold bg-cream-footer inline-block px-5 py-1.5 rounded-full">
+        <div className="bg-white rounded-2xl shadow-card p-6 lg:p-10 mb-8 border border-cream-border">
+          <h3 className="text-center text-text-heading mb-8">
+            <div className="text-sm lg:text-base font-bold gradient-coral text-white inline-block px-6 py-2 rounded-full">
               {titleJa}でできること
             </div>
           </h3>
-          <div className="text-[13px] lg:text-[20px] text-brown leading-relaxed">
+          <div className="text-[13px] lg:text-[18px] text-text-main leading-relaxed">
             {preamble}
             {features.map((feature) => (
-              <div key={feature.label} className="mb-4">
-                <div className={`${highlightClass} font-bold py-1 px-4 rounded-full inline-block mb-1`}>
+              <div key={feature.label} className="mb-5 bg-section-bg rounded-xl p-4 lg:p-5">
+                <div className={`${highlightClass} font-bold py-1.5 px-4 rounded-full inline-block mb-2 text-sm`}>
                   {feature.label}
                 </div>
-                <p>{feature.description}</p>
+                <p className="text-text-main">{feature.description}</p>
               </div>
             ))}
             {extraContent}
           </div>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-card p-6 lg:p-10 mb-8">
-          <h3 className="text-center text-brown mb-6">
-            <div className="text-sm lg:text-base font-bold bg-cream-footer inline-block px-5 py-1.5 rounded-full">
-              {titleJa}は、こんな方にオススメ！
+        <div className="bg-white rounded-2xl shadow-card p-6 lg:p-10 mb-8 border border-cream-border">
+          <h3 className="text-center text-text-heading mb-8">
+            <div className="text-sm lg:text-base font-bold gradient-coral text-white inline-block px-6 py-2 rounded-full">
+              こんな方にオススメ！
             </div>
           </h3>
-          <div className="text-center text-[13px] lg:text-[20px] text-brown leading-loose">
+          <div className="text-center text-[13px] lg:text-[18px] text-text-main leading-loose">
             {recommendations.map((rec) => (
-              <div key={rec}>✩ {rec}</div>
+              <div key={rec} className="flex items-start gap-2 text-left max-w-lg mx-auto mb-2">
+                <span className="text-primary shrink-0 mt-0.5">&#x2714;</span>
+                <span>{rec}</span>
+              </div>
             ))}
           </div>
         </div>
@@ -77,7 +91,8 @@ export function CourseDetail({
           price={price}
           priceUnit={priceUnit}
           buttonHref={buttonHref}
-          buttonText="参加する"
+          buttonText="まずは気軽に参加してみる"
+          popular={popular}
         />
       </div>
     </section>
